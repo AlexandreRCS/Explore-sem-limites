@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+@font-face {
+    font-family: 'akazidenz';
+    src: url(./fonts/Akzidenz-grotesk-light.ttf) format('truetype');
+}
+
+:root{
+    font-size: 62.5%;
+
+    --color-50:#ffffff;
+    --color-100:#ed15a5;
+    --color-200:#207df7;
+    --color-300:#2d2c3f;
+}
+
+
+body{
+    font-family: 'akazidenz' , sans-serif;
+}
+
+main section h1{
+    font-size: clamp(3.4rem, 4rem, 5.4rem);
+    font-weight: bold;
+}
+
+main
