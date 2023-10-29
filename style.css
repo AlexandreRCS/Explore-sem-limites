@@ -9,7 +9,9 @@
 
 @font-face {
     font-family: 'akazidenz';
-    src: url(./fonts/Akzidenz-grotesk-light.ttf) format('truetype');
+    src: url(./fonts/Akzidenz-grotesk-light.ttf) format('truetype'),
+    url(./fonts/Akzidenz-grotesk-bold.ttf) format('truetype'),
+    url(./fonts/Akzidenz-grotesk-roman.ttf) format('truetype');
 }
 
 :root{
@@ -27,8 +29,47 @@ body{
 }
 
 main section h1{
-    font-size: clamp(3.4rem, 4rem, 5.4rem);
-    font-weight: bold;
+    font-size: clamp(2rem, 4rem, 6.4rem);
+
+    margin-top: 3rem;
+    padding-left: 2rem;
+    color: var(--color-100);
 }
 
-main
+.title{
+    position: absolute;
+    top: 60%;
+}
+
+.astronaut{
+    position: relative;
+
+}
+
+.astronaut> *{
+    border: 1px solid red;
+}
+.img-astronaut{
+    width: max-content;
+    
+}
+
+.img-astronaut img{
+    width: clamp(220px, 400px 600px);
+    overflow: hidden;
+   
+}
+
+
+/*.title{
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+
+
+.astronaut > img{
+    position:absolute;
+    max-width: 400px;
+    right: 0;
+}*/
