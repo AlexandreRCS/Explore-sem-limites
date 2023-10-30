@@ -7,19 +7,19 @@
     -moz-osx-font-smoothing:grayscale;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'akazidenz';
-    src: url(./fonts/Akzidenz-grotesk-light.ttf) format('truetype'),
-    url(./fonts/Akzidenz-grotesk-bold.ttf) format('truetype'),
+    src: url(./fonts/Akzidenz-grotesk-bold.ttf) format('truetype'),
+    url(./fonts/Akzidenz-grotesk-light.ttf) format('truetype'),
     url(./fonts/Akzidenz-grotesk-roman.ttf) format('truetype');
 }
-
+*/
 :root{
     font-size: 62.5%;
 
     --color-50:#ffffff;
     --color-100:#ed15a5;
-    --color-200:#207df7;
+    --color-200:#312d6a;
     --color-300:#2d2c3f;
 }
 
@@ -29,47 +29,97 @@ body{
 }
 
 main section h1{
-    font-size: clamp(2rem, 4rem, 6.4rem);
-
-    margin-top: 3rem;
-    padding-left: 2rem;
+    font-size: 2rem;
     color: var(--color-100);
+    margin-bottom: 0.6rem;
+}
+
+
+.astronaut{
+    position: relative;
+    height: 510px;
+    
 }
 
 .title{
     position: absolute;
-    top: 60%;
-}
-
-.astronaut{
-    position: relative;
+    top: 180px;
+    max-width: 187px;
+    padding-left: 1rem;
 
 }
 
-.astronaut> *{
-    border: 1px solid red;
+.title > img{
+    padding-top: 1rem;
+    padding-left: 30%;
 }
-.img-astronaut{
-    width: max-content;
-    
-}
-
-.img-astronaut img{
-    width: clamp(220px, 400px 600px);
-    overflow: hidden;
-   
-}
-
-
-/*.title{
-    position: absolute;
-    top: 60%;
-    left: 0;
-}
-
 
 .astronaut > img{
-    position:absolute;
-    max-width: 400px;
+    position: absolute;
+    top: 0;
     right: 0;
-}*/
+    width: clamp(270px, 75%, 600px);
+}
+
+.planet{
+    align-items: center;
+    background-color: var(--color-200);
+    padding: 2rem 3rem;
+}
+
+
+
+.planet article{
+    background-color: var(--color-50);
+    padding: 1.6rem 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.planet h2{
+    color: var(--color-100);
+    font-size: 2rem;
+    margin: 3rem 0 1rem;
+}
+
+.planet p{
+    color: var(--color-300);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.contact{
+    background-image: url(./assets/stars.svg);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 70%;
+
+    padding-left: 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact form legend{
+    font-weight: bold;
+    font-size: 2.4rem;
+    padding-top: 3rem ;
+    color: var(--color-100);
+}
+
+.input-wrapper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input{
+    min-width: 300px;
+    height: 3.5rem;
+}
+
