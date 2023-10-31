@@ -222,13 +222,13 @@ footer{
 
 @media (min-width: 1000px) {
     .title{
-        margin-left: 10.6rem;
+        margin-left: 4rem;
     }
     .astronaut img{
         right: 50px;
     }
 
     .title h1{
-        font-size: 7rem;
+        font-size: 5rem;
     }
 }
