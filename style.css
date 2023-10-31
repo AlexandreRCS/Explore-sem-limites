@@ -7,13 +7,15 @@
     -moz-osx-font-smoothing:grayscale;
 }
 
-/*@font-face {
-    font-family: 'akazidenz';
-    src: url(./fonts/Akzidenz-grotesk-bold.ttf) format('truetype'),
+@font-face {
+    font-family: 'akazidenz' ;
+    src: 
     url(./fonts/Akzidenz-grotesk-light.ttf) format('truetype'),
     url(./fonts/Akzidenz-grotesk-roman.ttf) format('truetype');
+
+    
 }
-*/
+
 :root{
     font-size: 62.5%;
 
@@ -44,7 +46,7 @@ main section h1{
 .title{
     position: absolute;
     top: 180px;
-    max-width: 187px;
+    width: 187px;
     padding-left: 1rem;
 
 }
@@ -75,6 +77,8 @@ main section h1{
     border-radius: 1rem;
     margin-bottom: 2rem;
 
+    height: 400px;
+
 }
 
 .planet h2{
@@ -87,6 +91,7 @@ main section h1{
     color: var(--color-300);
     font-size: 1.6rem;
     line-height: 2.4rem;
+
 }
 
 .contact{
@@ -119,7 +124,111 @@ form{
 }
 
 .input-wrapper input{
-    min-width: 300px;
+    min-width: 320px;
     height: 3.5rem;
+    padding: 2rem 2rem 2rem 4rem;
+
+    border-radius: 1rem;
+    border:1px solid #312d6a;
+
+    font-family: 'akazidenz' , sans-serif;
+    font-size: 1.6rem;
+
 }
 
+#input-name{
+    background-image: url(./assets/person.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+}
+
+#input-email{
+    background-image: url(./assets/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+}
+
+.input-wrapper textarea{
+    min-width: 320px;
+    border-radius: 1rem;
+
+    font-family: 'akazidenz' , sans-serif;
+
+    padding: 2rem;
+
+}
+
+form button{
+    width: 180px;
+    padding: 1.4rem 1.6rem;
+
+    border-radius: 1.6rem;
+    border: none;
+
+    background-color: var(--color-200);
+    color: var(--color-50);
+}
+
+footer{
+    margin-top: 3rem;
+    background-color: var(--color-200);
+    text-align: center;
+    padding: 3rem;
+
+    color: var(--color-50);
+    font-size: 1.4rem;
+}
+
+
+@media (min-width: 640px) {
+    .planet{
+        display: grid;
+        grid-template-columns: 
+            repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 2rem;
+    }
+
+    .astronaut{
+        height: 660px;
+    }
+
+    .title{
+        top: 300px;
+        width: 600px;
+        padding-left: 2.4rem;
+        
+    }
+
+    .title h1{
+        font-size: 4rem;
+    }
+
+    .title h3{
+        font-size: 2rem;
+    }
+
+    .title img{
+        padding-left: 0;
+
+        margin-top: 10rem;
+
+    }
+
+    .input-wrapper input, textarea{
+        width: 500px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .title{
+        margin-left: 10.6rem;
+    }
+    .astronaut img{
+        right: 50px;
+    }
+
+    .title h1{
+        font-size: 7rem;
+    }
+}
